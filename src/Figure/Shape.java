@@ -1,6 +1,8 @@
 package Figure;
 
-public class Shape {
-    private String name;
+public abstract class Shape {
 
+    public String figureName(){
+        return this.getClass().getSimpleName();
+    }
 }

@@ -1,12 +1,9 @@
 package Figure;
 
-public class Point {
+public class Point extends Shape{
     private int x;
     private int y;
-
     private String color;
-    private String name = "Point";
-
     public Point(int x, int y, String color) {
         this.x = x;
         this.y = y;
@@ -19,5 +16,11 @@ public class Point {
 
     public int getY() {
         return y;
+    }
+
+    @Override
+    public String figureName() {
+
+        return super.figureName();
     }
 }
