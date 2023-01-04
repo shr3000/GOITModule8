@@ -3,11 +3,11 @@ package Figure;
 public class Point extends Shape{
     private int x;
     private int y;
-    private String color;
-    public Point(int x, int y, String color) {
+    private Enum color;
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
-        this.color = color;
+        color = Color.BLACK;
     }
 
     public int getX() {
@@ -20,7 +20,15 @@ public class Point extends Shape{
 
     @Override
     public String figureName() {
-
         return super.figureName();
+    }
+
+    public void setColor(Enum color) {
+        this.color = color;
+    }
+
+    @Override
+    public boolean isExist() {
+        return true;
     }
 }
